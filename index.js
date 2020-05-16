@@ -1,6 +1,5 @@
 const scroller = new scrollama();
 console.log(scroller);
-const scrollIntoElemnent = document.getElementById("3");
 scroller
   .setup({
     step: ".step",
@@ -15,13 +14,17 @@ scroller
   });
 
 function handleClick(e) {
-  console.log("Hello", e);
+  console.log(e.target.getAttribute("target"));
+  const scrollIntoElemnent = document.getElementById(
+    e.target.getAttribute("target")
+  );
+
   scrollIntoElemnent.scrollIntoView({
     behavior: "smooth",
   });
 }
 
-const steps = document.getElementsByClassName("step");
+const steps = document.getElementsByClassName("clickable");
 for (var element = 0; element < steps.length; element++) {
   steps[element].addEventListener("click", handleClick);
 }

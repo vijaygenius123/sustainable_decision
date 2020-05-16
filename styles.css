@@ -5,9 +5,10 @@ body {
 }
 
 .step {
-  min-height: 70vh;
+  min-height: 100vh;
   background-color: white;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   animation: fade_out 1s ease-in forwards;
@@ -18,7 +19,7 @@ body {
 }
 
 .step.is-active {
-  background-color: gray;
+  background-color: rgba(0, 255, 0, 0.5);
   animation: fade_in 1s ease-in forwards;
 }
 
@@ -27,15 +28,24 @@ body {
     background-color: white;
   }
   to {
-    background-color: gray;
+    background-color: rgba(0, 255, 0, 0.5);
   }
 }
 
 @keyframes fade_out {
   from {
-    background-color: gray;
+    background-color: rgba(0, 255, 0, 0.5);
   }
   to {
     background-color: white;
   }
+}
+
+.clickable {
+  margin: 10% 10%;
+  border: 3px solid white;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: rgba(0, 255, 0, 0.2);
+  cursor: pointer;
 }
