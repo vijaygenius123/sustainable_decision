@@ -15,12 +15,105 @@
           Proceed
         </h2>
       </div>
+
       <div class="step" id="1" target="2">
-        <h1 class="clickable">Want To Buy Something??</h1>
+        <h1>Want To Buy Something??</h1>
+        <div class="multi">
+          <h2 class="clickable negative" target="2">
+            Yup
+          </h2>
+          <h2 class="clickable positive" target="10">
+            Nah
+          </h2>
+        </div>
       </div>
-      <div class="step" id="2"><h1>Slide 2</h1></div>
-      <div class="step" id="3"><h1>Slide 3</h1></div>
-      <div class="step" id="4"><h1>Slide 4</h1></div>
+
+      <div class="step" id="2">
+        <h1>Do You Really Need It??</h1>
+        <div class="multi">
+          <h2 class="clickable negative" target="3">
+            Yeah Im Pretty Sure
+          </h2>
+          <h2 class="clickable positive" target="10">
+            On Second Thought, No
+          </h2>
+        </div>
+      </div>
+
+      <div class="step" id="3">
+        <h1>Did You Need It Yesterday?</h1>
+        <div class="multi">
+          <h2 class="clickable negative" target="4">
+            Yup I Did
+          </h2>
+          <h2 class="clickable positive" target="9">
+            Gosh, I Was Able To Get Through Without It Yesterday
+          </h2>
+        </div>
+      </div>
+
+      <div class="step" id="4">
+        <h1>Can You Borrow It / Rent It ??</h1>
+        <div class="multi">
+          <h2 class="clickable positive" target="8">
+            That Is A Brilliant Idea
+          </h2>
+          <h2 class="clickable negative" target="5">
+            Nah, I Don't Think So
+          </h2>
+        </div>
+      </div>
+
+      <div class="step" id="5">
+        <h1>Do You Want To Maintain It? ( Clean, Organize It )</h1>
+        <div class="multi">
+          <h2 class="clickable positive" target="8">
+            Yup I Can Do That
+          </h2>
+          <h2 class="clickable negative" target="7">
+            Nah, I Don't Think So
+          </h2>
+        </div>
+      </div>
+
+      <div class="step" id="6">
+        <h1>Seems Like You Really Need It & Would Maintin It</h1>
+        <h2 class="clickable" target="0">
+          Back To Start
+        </h2>
+      </div>
+
+      <div class="step" id="7">
+        <h1 class="negative-final">
+          Dont Buy It, Since You Aren't Ready To Maintain It
+        </h1>
+        <h2 class="clickable" target="0">
+          Back To Start
+        </h2>
+      </div>
+
+      <div class="step" id="8">
+        <h1 class="positive-final">
+          You Saved The Earth :), Always Rent When Possible
+        </h1>
+        <h2 class="clickable" target="0">
+          Back To Start
+        </h2>
+      </div>
+
+      <div class="step" id="9">
+        <h1 class="positive-final">Wait For 30 Days And Check Back ;)</h1>
+        <h2 class="clickable" target="0">
+          Back To Start
+        </h2>
+      </div>
+
+      <div class="step" id="10">
+        <h1 class="positive-final">Your Good :)</h1>
+        <h2 class="clickable" target="0">
+          Back To Start
+        </h2>
+      </div>
     </div>
     <script src="https://d3js.org/d3.v4.min.js"></script>
     <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
