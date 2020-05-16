@@ -1,0 +1,41 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.step {
+  min-height: 70vh;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fade_out 1s ease-in forwards;
+}
+
+.step:last-of-type {
+  margin-bottom: 0;
+}
+
+.step.is-active {
+  background-color: gray;
+  animation: fade_in 1s ease-in forwards;
+}
+
+@keyframes fade_in {
+  from {
+    background-color: white;
+  }
+  to {
+    background-color: gray;
+  }
+}
+
+@keyframes fade_out {
+  from {
+    background-color: gray;
+  }
+  to {
+    background-color: white;
+  }
+}
